@@ -9,5 +9,8 @@
   <body>
     <h3><%= skills.todo %></h3>
     <h3>Complete: <%= skills.done ? 'Yes' : 'No' %></h3>
+    <form action="/skills/:id?_method=DELETE" class="delete-form" method="POST">
+      <button type="submit">Delete Skill</button>
+    </form>
   </body>
 </html>
